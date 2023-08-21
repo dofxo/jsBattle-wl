@@ -1,0 +1,54 @@
+@font-face {
+    font-family: Mukta;
+    src: url(assets/fonts/Mukta-Regular.ttf);
+}
+
+body {
+    font-family: Mukta;
+    margin: 0;
+    min-height: 100vh;
+    background-color: #333;
+    overflow: hidden;
+}
+
+.score {
+    position: absolute;
+    top: 0;
+    color: white;
+    font-weight: bold;
+    z-index: 2;
+    font-size: 30px;
+    right: 50%;
+    transform: translateX(50%);
+}
+
+.player {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #de4f4f;
+    position: absolute;
+    z-index: 1;
+
+}
+
+.box {
+    width: 80px;
+    height: 80px;
+    background-color: #50c4c8;
+    border-radius: 5px;
+    position: absolute;
+}
+
+@media screen and (max-width:620px) {
+    .box {
+        width: 40px;
+        height: 40px;
+    }
+
+    .player {
+        width: 30px;
+        height: 30px;
+    }
+
+}
